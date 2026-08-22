@@ -1,0 +1,9 @@
+{
+  "name": "Grand Syncretic Matrix",
+  "short_name": "GSM Map",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "description": "Date-free map of texts, myths, and events. Observer discerns."
+}
