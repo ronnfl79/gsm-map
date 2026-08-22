@@ -1,7 +1,7 @@
 {
   "slice": "multi_stratum_v1",
-  "generated_at": "2026-08-22T21:26:03.671239+00:00",
-  "pipeline": "seed_event_anchors → same_event_nodes → live_graph",
+  "generated_at": "2026-08-22T21:29:30.258094+00:00",
+  "pipeline": "seed_search_pass2 → attach_same_event → live_graph",
   "nodes": [
     {
       "node_id": "EVENT_DELUGE",
@@ -15,7 +15,7 @@
       "place": "Mesopotamia core; Armenia landing (Josephus)",
       "method": "Same event from Genesis, Josephus, Gilgamesh",
       "stratum": "III — Great Re-Set",
-      "src": "Genesis 7 (KJV, public domain); Flavius Josephus, Antiquities of the Jews, Book 1; Epic of Gilgamesh, Tablet XI (public-domain translation tradition); Atrahasis flood (Mesopotamian); Eridu Genesis / Ziusudra; Matsya Purana / Manu flood; Berossus Babyloniaca flood / Xisuthrus; Popol Vuh flood / failed-creation waters",
+      "src": "Genesis 7 (KJV, public domain); Flavius Josephus, Antiquities of the Jews, Book 1; Epic of Gilgamesh, Tablet XI (public-domain translation tradition); Atrahasis flood (Mesopotamian); Eridu Genesis / Ziusudra; Matsya Purana / Manu flood; Berossus Babyloniaca flood / Xisuthrus; Popol Vuh flood / failed-creation waters; Shatapatha Brahmana (Manu + fish); Hopi world-age flood / emergence memory; Atra-hasis (Foster / Livius recension)",
       "conf": "See CONFLICT_FLOOD_DURATION",
       "body": "One Flood event, three source layers on one rail slot. More sources corroborating the event = larger, brighter map marker. Josephus tracks Genesis (40 days). Gilgamesh differs on length. Click * / ** — you discern.",
       "star": "*/**",
@@ -56,18 +56,30 @@
           {
             "title": "Popol Vuh flood / failed-creation waters",
             "url": "https://www.sacred-texts.com/nam/maya/pvgm/index.htm"
+          },
+          {
+            "title": "Shatapatha Brahmana (Manu + fish)",
+            "url": "https://www.sacred-texts.com/hin/sbe12/index.htm"
+          },
+          {
+            "title": "Hopi world-age flood / emergence memory",
+            "url": "https://www.sacred-texts.com/nam/index.htm"
+          },
+          {
+            "title": "Atra-hasis (Foster / Livius recension)",
+            "url": "https://www.livius.org/sources/content/anet/104-106-the-epic-of-atrahasis/"
           }
         ]
       },
       "corroboration": {
-        "source_count": 8,
-        "independent_traditions": 6,
-        "agreeing_on_event": 8,
+        "source_count": 11,
+        "independent_traditions": 8,
+        "agreeing_on_event": 11,
         "disagreeing_on_details": 1,
         "weight": 1.0,
         "map_emphasis": "high"
       },
-      "source_count": 8
+      "source_count": 11
     },
     {
       "node_id": "CONFLICT_FLOOD_DURATION",
@@ -346,6 +358,39 @@
             "agent_id": "SEED_SEARCH",
             "category": "SeedFind"
           }
+        },
+        {
+          "claim_id": "C_SATAPATHA_MANU",
+          "source_layer": "Shatapatha Brahmana (Manu + fish)",
+          "statement": "Manu is warned by a fish; a flood covers the world; a boat preserves remnant life.",
+          "provenance": {
+            "url": "https://www.sacred-texts.com/hin/sbe12/index.htm",
+            "keyword": "manu flood",
+            "citation": "Śatapatha Brāhmaṇa 1.8.1"
+          },
+          "nli_vs_peers": "same_event"
+        },
+        {
+          "claim_id": "C_HOPI_FLOOD",
+          "source_layer": "Hopi world-age flood / emergence memory",
+          "statement": "Prior world destroyed by water; remnant emerges into the present world (prophecy tablets / emergence lore).",
+          "provenance": {
+            "url": "https://www.sacred-texts.com/nam/index.htm",
+            "keyword": "hopi flood",
+            "citation": "Hopi emergence / world-age water destruction"
+          },
+          "nli_vs_peers": "same_event"
+        },
+        {
+          "claim_id": "C_LIVIUS_ATRAHASIS",
+          "source_layer": "Atra-hasis (Foster / Livius recension)",
+          "statement": "Gods send a flood after human noise; Enki warns Atra-hasis to build a boat.",
+          "provenance": {
+            "url": "https://www.livius.org/sources/content/anet/104-106-the-epic-of-atrahasis/",
+            "keyword": "atrahasis",
+            "citation": "Epic of Atra-hasis (Old Babylonian)"
+          },
+          "nli_vs_peers": "same_event"
         }
       ],
       "nli_result": {
@@ -415,7 +460,10 @@
           "C_ERIDU_GENESIS_FLOOD",
           "C_MATSYA_FLOOD",
           "C_BEROSSUS_FLOOD",
-          "C_POPOL_VUH_FLOOD"
+          "C_POPOL_VUH_FLOOD",
+          "C_SATAPATHA_MANU",
+          "C_HOPI_FLOOD",
+          "C_LIVIUS_ATRAHASIS"
         ],
         "attacks": [
           [
@@ -486,6 +534,18 @@
           {
             "title": "Popol Vuh flood / failed-creation waters",
             "url": "https://www.sacred-texts.com/nam/maya/pvgm/index.htm"
+          },
+          {
+            "title": "Shatapatha Brahmana (Manu + fish)",
+            "url": "https://www.sacred-texts.com/hin/sbe12/index.htm"
+          },
+          {
+            "title": "Hopi world-age flood / emergence memory",
+            "url": "https://www.sacred-texts.com/nam/index.htm"
+          },
+          {
+            "title": "Atra-hasis (Foster / Livius recension)",
+            "url": "https://www.livius.org/sources/content/anet/104-106-the-epic-of-atrahasis/"
           }
         ]
       },
@@ -498,14 +558,14 @@
       },
       "cls": "conflict",
       "corroboration": {
-        "source_count": 8,
-        "independent_traditions": 6,
-        "agreeing_on_event": 8,
+        "source_count": 11,
+        "independent_traditions": 8,
+        "agreeing_on_event": 11,
         "disagreeing_on_details": 1,
         "weight": 1.0,
         "map_emphasis": "high"
       },
-      "source_count": 8
+      "source_count": 11
     },
     {
       "node_class": "event",
@@ -513,14 +573,14 @@
       "method": "Same-event slot; sources layered; observer discerns",
       "conf": "preferred_view=null; observer discerns",
       "corroboration": {
-        "source_count": 5,
-        "independent_traditions": 5,
-        "agreeing_on_event": 5,
+        "source_count": 8,
+        "independent_traditions": 8,
+        "agreeing_on_event": 8,
         "disagreeing_on_details": 1,
-        "weight": 0.85,
+        "weight": 0.99,
         "map_emphasis": "high"
       },
-      "source_count": 5,
+      "source_count": 8,
       "node_id": "EVENT_CREATION",
       "title": "Creation / First Ordering",
       "aliases": "Genesis 1 · Enuma Elish · Poimandres · Sefer Yetzirah · Popol Vuh",
@@ -528,7 +588,7 @@
       "lon": 46.0,
       "place": "Eden / Mesopotamian alluvium traditions",
       "stratum": "I — Primeval",
-      "src": "Genesis 1; Enuma Elish; Corpus Hermeticum (Poimandres); Sefer Yetzirah; Popol Vuh",
+      "src": "Genesis 1; Enuma Elish; Corpus Hermeticum (Poimandres); Sefer Yetzirah; Popol Vuh; Hiranyagarbha / golden-egg cosmogony (Vedic); Emerald Tablet (as above, so below); Mandan Lone Man / primeval flood-anchor cosmology",
       "body": "One “origin of ordered world” slot. Biblical: God speaks cosmos into being. Mesopotamian: combat/separation of waters. Hermetic: Mind/Nous emanation. Kabbalistic: letters and sephirot. Maya: successive world-ages. Click * / ** — you discern.",
       "star": "*/**",
       "starNote": "* Genesis 1: God creates by word, without rival gods. ** Enuma Elish / Poimandres / Yetzirah / Popol Vuh order the world by combat, emanation, letters, or failed prior ages.",
@@ -556,6 +616,18 @@
           {
             "title": "Popol Vuh",
             "url": "https://www.sacred-texts.com/nam/maya/pvgm/index.htm"
+          },
+          {
+            "title": "Hiranyagarbha / golden-egg cosmogony (Vedic)",
+            "url": "https://www.sacred-texts.com/hin/rigveda/index.htm"
+          },
+          {
+            "title": "Emerald Tablet (as above, so below)",
+            "url": "https://www.sacred-texts.com/alc/emerald.htm"
+          },
+          {
+            "title": "Mandan Lone Man / primeval flood-anchor cosmology",
+            "url": "https://www.sacred-texts.com/nam/index.htm"
           }
         ]
       },
@@ -567,14 +639,14 @@
       "method": "Same-event slot; sources layered; observer discerns",
       "conf": "preferred_view=null; observer discerns",
       "corroboration": {
-        "source_count": 5,
-        "independent_traditions": 5,
-        "agreeing_on_event": 5,
+        "source_count": 8,
+        "independent_traditions": 8,
+        "agreeing_on_event": 8,
         "disagreeing_on_details": 1,
-        "weight": 0.85,
+        "weight": 0.99,
         "map_emphasis": "high"
       },
-      "source_count": 5,
+      "source_count": 8,
       "node_id": "CONFLICT_CREATION_MODE",
       "title": "How the world is ordered",
       "aliases": "Creation conflict",
@@ -611,6 +683,39 @@
           "claim_id": "C_POPOL_VUH_ORIGINS",
           "source_layer": "Popol Vuh",
           "statement": "Makers attempt successive peoples; prior ages fail before the present people."
+        },
+        {
+          "claim_id": "C_HIRANYAGARBHA",
+          "source_layer": "Hiranyagarbha / golden-egg cosmogony (Vedic)",
+          "statement": "Ordered world unfolds from the primordial golden egg / Hiranyagarbha.",
+          "provenance": {
+            "url": "https://www.sacred-texts.com/hin/rigveda/index.htm",
+            "keyword": "hiranyagarbha",
+            "citation": "Vedic Hiranyagarbha hymn / Brahmana cosmology"
+          },
+          "nli_vs_peers": "same_event"
+        },
+        {
+          "claim_id": "C_EMERALD_TABLET",
+          "source_layer": "Emerald Tablet (as above, so below)",
+          "statement": "One thing; correspondence of above and below; operation of the sun as cosmic formula.",
+          "provenance": {
+            "url": "https://www.sacred-texts.com/alc/emerald.htm",
+            "keyword": "emerald tablet",
+            "citation": "Emerald / Smaragdine Tablet"
+          },
+          "nli_vs_peers": "same_event"
+        },
+        {
+          "claim_id": "C_LONE_MAN",
+          "source_layer": "Mandan Lone Man / primeval flood-anchor cosmology",
+          "statement": "Lone Man creation with primeval flood anchor-points and world testing.",
+          "provenance": {
+            "url": "https://www.sacred-texts.com/nam/index.htm",
+            "keyword": "lone man mandan",
+            "citation": "Mandan Lone Man tradition"
+          },
+          "nli_vs_peers": "same_event"
         }
       ],
       "refs": {
@@ -628,6 +733,18 @@
           {
             "title": "Poimandres",
             "url": "https://www.sacred-texts.com/eso/sta/sta07.htm"
+          },
+          {
+            "title": "Hiranyagarbha / golden-egg cosmogony (Vedic)",
+            "url": "https://www.sacred-texts.com/hin/rigveda/index.htm"
+          },
+          {
+            "title": "Emerald Tablet (as above, so below)",
+            "url": "https://www.sacred-texts.com/alc/emerald.htm"
+          },
+          {
+            "title": "Mandan Lone Man / primeval flood-anchor cosmology",
+            "url": "https://www.sacred-texts.com/nam/index.htm"
           }
         ]
       },
@@ -636,7 +753,16 @@
       "preferred_view": null,
       "resolver": "observer",
       "resolution_status": "unresolved",
-      "losing_claims_retained": true
+      "losing_claims_retained": true,
+      "argument_graph": {
+        "arguments": [
+          "C_HIRANYAGARBHA",
+          "C_EMERALD_TABLET",
+          "C_LONE_MAN"
+        ],
+        "attacks": [],
+        "supports": []
+      }
     },
     {
       "node_class": "event",
@@ -689,14 +815,14 @@
       "method": "Same-event slot; sources layered; observer discerns",
       "conf": "preferred_view=null; observer discerns",
       "corroboration": {
-        "source_count": 4,
-        "independent_traditions": 3,
-        "agreeing_on_event": 4,
+        "source_count": 6,
+        "independent_traditions": 6,
+        "agreeing_on_event": 6,
         "disagreeing_on_details": 1,
-        "weight": 0.75,
+        "weight": 0.83,
         "map_emphasis": "high"
       },
-      "source_count": 4,
+      "source_count": 6,
       "node_id": "EVENT_WATCHERS",
       "title": "Watchers / Descent at Hermon",
       "aliases": "Genesis 6 · 1 Enoch · Book of Giants · Nephilim",
@@ -704,7 +830,7 @@
       "lon": 35.857,
       "place": "Mount Hermon",
       "stratum": "II — Descent",
-      "src": "Genesis 6; 1 Enoch 6–16; Book of Giants; Jubilees",
+      "src": "Genesis 6; 1 Enoch 6–16; Book of Giants; Jubilees; 1 Enoch 6–8 (Watchers oath on Hermon); Jubilees (Watchers + Mastema)",
       "body": "Same descent slot. Genesis: sons of God, daughters of men, Nephilim. Enoch: 200 Watchers on Hermon, forbidden crafts, giants. Book of Giants names Ohya/Mahway. Sitchin-style Anunnaki readings are later overlays — marked **, not auto-merged with Torah.",
       "star": "*/**",
       "starNote": "* Genesis 6 is brief. ** 1 Enoch / Giants / Jubilees expand Watchers, oath, and judgment. Anunnaki readings are modern theoretical overlays.",
@@ -724,6 +850,10 @@
           {
             "title": "Book of Giants (DSS)",
             "url": "https://www.deadseascrolls.org.il/"
+          },
+          {
+            "title": "Jubilees (Watchers + Mastema)",
+            "url": "https://www.sacred-texts.com/bib/jub/index.htm"
           }
         ]
       },
@@ -735,14 +865,14 @@
       "method": "Same-event slot; sources layered; observer discerns",
       "conf": "preferred_view=null; observer discerns",
       "corroboration": {
-        "source_count": 4,
-        "independent_traditions": 3,
-        "agreeing_on_event": 4,
+        "source_count": 6,
+        "independent_traditions": 6,
+        "agreeing_on_event": 6,
         "disagreeing_on_details": 1,
-        "weight": 0.75,
+        "weight": 0.83,
         "map_emphasis": "high"
       },
-      "source_count": 4,
+      "source_count": 6,
       "node_id": "CONFLICT_DESCENT_IDENTITY",
       "title": "Who descended?",
       "aliases": "Watchers vs sons of God vs Anunnaki overlay",
@@ -769,6 +899,28 @@
           "claim_id": "C_ANUNNAKI_OVERLAY",
           "source_layer": "Modern Anunnaki readings",
           "statement": "Descent framed as Anunnaki/Nibiru contact (theoretical, not a biblical book)."
+        },
+        {
+          "claim_id": "C_ENOCH6_OATH",
+          "source_layer": "1 Enoch 6–8 (Watchers oath on Hermon)",
+          "statement": "Two hundred Watchers led by Shemihazah/Samyaza swear on Hermon; Azazel teaches weapons and adornment.",
+          "provenance": {
+            "url": "https://www.sacred-texts.com/bib/boe/boe009.htm",
+            "keyword": "watchers hermon",
+            "citation": "1 Enoch 6–8"
+          },
+          "nli_vs_peers": "same_event"
+        },
+        {
+          "claim_id": "C_JUBILEES_WATCHERS",
+          "source_layer": "Jubilees (Watchers + Mastema)",
+          "statement": "Watchers descend; Mastema petitions to retain a portion of spirits after judgment.",
+          "provenance": {
+            "url": "https://www.sacred-texts.com/bib/jub/index.htm",
+            "keyword": "jubilees watchers",
+            "citation": "Book of Jubilees"
+          },
+          "nli_vs_peers": "same_event"
         }
       ],
       "refs": {
@@ -782,6 +934,14 @@
           {
             "title": "1 Enoch",
             "url": "https://www.sacred-texts.com/bib/boe/index.htm"
+          },
+          {
+            "title": "1 Enoch 6–8 (Watchers oath on Hermon)",
+            "url": "https://www.sacred-texts.com/bib/boe/boe009.htm"
+          },
+          {
+            "title": "Jubilees (Watchers + Mastema)",
+            "url": "https://www.sacred-texts.com/bib/jub/index.htm"
           }
         ]
       },
@@ -790,7 +950,15 @@
       "preferred_view": null,
       "resolver": "observer",
       "resolution_status": "unresolved",
-      "losing_claims_retained": true
+      "losing_claims_retained": true,
+      "argument_graph": {
+        "arguments": [
+          "C_ENOCH6_OATH",
+          "C_JUBILEES_WATCHERS"
+        ],
+        "attacks": [],
+        "supports": []
+      }
     },
     {
       "node_class": "event",
@@ -798,14 +966,14 @@
       "method": "Same-event slot; sources layered; observer discerns",
       "conf": "preferred_view=null; observer discerns",
       "corroboration": {
-        "source_count": 3,
-        "independent_traditions": 2,
-        "agreeing_on_event": 3,
+        "source_count": 4,
+        "independent_traditions": 4,
+        "agreeing_on_event": 4,
         "disagreeing_on_details": 1,
-        "weight": 0.65,
-        "map_emphasis": "medium"
+        "weight": 0.67,
+        "map_emphasis": "high"
       },
-      "source_count": 3,
+      "source_count": 4,
       "node_id": "EVENT_BABEL",
       "title": "Babel / scattering of tongues",
       "aliases": "Tower of Babel · Eridu ziggurat memory · Enmerkar",
@@ -813,7 +981,7 @@
       "lon": 44.421,
       "place": "Babylon / Shinar",
       "stratum": "III — Re-Set",
-      "src": "Genesis 11; extra-biblical ziggurat and Enmerkar traditions",
+      "src": "Genesis 11; extra-biblical ziggurat and Enmerkar traditions; Enmerkar and the Lord of Aratta",
       "body": "Same scattering/one-speech slot after the Flood. Biblical: one language, tower, YHWH confuses speech. Mesopotamian: temple-tower building and contested speech/authority motifs. Observer discerns.",
       "star": "*/**",
       "starNote": "* Genesis 11: one language, tower in Shinar, scattering. ** Mesopotamian ziggurat / Enmerkar speech-contest traditions are neighboring memories, not identical wording.",
@@ -831,7 +999,20 @@
           }
         ]
       },
-      "id": "EVENT_BABEL"
+      "id": "EVENT_BABEL",
+      "competing_claims": [
+        {
+          "claim_id": "C_ENMERKAR",
+          "source_layer": "Enmerkar and the Lord of Aratta",
+          "statement": "King of Uruk contends over tribute and speech/authority with Aratta; temple-building prestige.",
+          "provenance": {
+            "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.2.3",
+            "keyword": "enmerkar",
+            "citation": "ETCSL Enmerkar"
+          },
+          "nli_vs_peers": "same_event"
+        }
+      ]
     },
     {
       "node_class": "event",
@@ -1003,14 +1184,14 @@
       "method": "Same-event slot; sources layered; observer discerns",
       "conf": "preferred_view=null; observer discerns",
       "corroboration": {
-        "source_count": 4,
-        "independent_traditions": 2,
-        "agreeing_on_event": 4,
+        "source_count": 5,
+        "independent_traditions": 5,
+        "agreeing_on_event": 5,
         "disagreeing_on_details": 0,
         "weight": 0.75,
         "map_emphasis": "high"
       },
-      "source_count": 4,
+      "source_count": 5,
       "node_id": "EVENT_EXILE",
       "title": "Exile / Temple down",
       "aliases": "Babylonian captivity · Daniel court tales",
@@ -1018,7 +1199,7 @@
       "lon": 44.42,
       "place": "Jerusalem → Babylon",
       "stratum": "V — Fulcrum",
-      "src": "2 Kings 25; Jeremiah; Daniel; Josephus",
+      "src": "2 Kings 25; Jeremiah; Daniel; Josephus; Daniel 1–4 (Babylon court)",
       "body": "Same exile slot. Biblical histories + prophetic books + Daniel court setting. Josephus retells. Observer discerns.",
       "star": "*",
       "starNote": "* 2 Kings 25 / Jeremiah as biblical fallback. Daniel and Josephus are additional layers on the same exile.",
@@ -1027,6 +1208,10 @@
           {
             "title": "2 Kings 25 (KJV)",
             "url": "https://www.biblegateway.com/passage/?search=2+Kings+25&version=KJV"
+          },
+          {
+            "title": "Daniel 1–4 (Babylon court)",
+            "url": "https://www.biblegateway.com/passage/?search=Daniel+2&version=KJV"
           }
         ],
         "dstar": [
@@ -1036,7 +1221,20 @@
           }
         ]
       },
-      "id": "EVENT_EXILE"
+      "id": "EVENT_EXILE",
+      "competing_claims": [
+        {
+          "claim_id": "C_DANIEL_COURT",
+          "source_layer": "Daniel 1–4 (Babylon court)",
+          "statement": "Judean captives in Babylonian court; kingdoms imaged as metals/beasts.",
+          "provenance": {
+            "url": "https://www.biblegateway.com/passage/?search=Daniel+2&version=KJV",
+            "keyword": "daniel",
+            "citation": "Daniel 2"
+          },
+          "nli_vs_peers": "same_event"
+        }
+      ]
     },
     {
       "node_class": "event",
@@ -1160,6 +1358,113 @@
         ]
       },
       "id": "EVENT_1948"
+    },
+    {
+      "node_class": "event",
+      "cls": "event",
+      "id": "EVENT_ENOCH_ASCENT",
+      "method": "Same-event slot; sources layered; observer discerns",
+      "conf": "preferred_view=null; observer discerns",
+      "corroboration": {
+        "source_count": 3,
+        "independent_traditions": 3,
+        "agreeing_on_event": 3,
+        "disagreeing_on_details": 1,
+        "weight": 0.65,
+        "map_emphasis": "high"
+      },
+      "source_count": 3,
+      "star": "*/**",
+      "refs": {
+        "star": [
+          {
+            "title": "Genesis 5:24 (KJV)",
+            "url": "https://www.biblegateway.com/passage/?search=Genesis+5&version=KJV"
+          }
+        ],
+        "dstar": [
+          {
+            "title": "2 Enoch",
+            "url": "https://www.sacred-texts.com/bib/fbe/fbe11.htm"
+          },
+          {
+            "title": "3 Enoch / Metatron lore",
+            "url": "https://www.sacred-texts.com/jud/index.htm"
+          }
+        ]
+      },
+      "node_id": "EVENT_ENOCH_ASCENT",
+      "title": "Enoch translated / Metatron overlay",
+      "aliases": "Genesis 5:24 · 2 Enoch · 3 Enoch Metatron",
+      "lat": 33.42,
+      "lon": 35.86,
+      "place": "Hermon / heavens (Enochic itinerary)",
+      "stratum": "II — Descent",
+      "src": "Genesis 5:24; 2 Enoch; 3 Enoch (Metatron)",
+      "body": "Same “Enoch taken” slot. Biblical: Enoch walked with God and was not. 2 Enoch: ten heavens. 3 Enoch: mortal Enoch becomes Metatron / Lesser YHWH. ** marks the later Merkabah overlay. Observer discerns.",
+      "starNote": "* Genesis 5:24 is brief. ** 2 Enoch heavens and 3 Enoch Metatron are expansions, not replacements.",
+      "competing_claims": [
+        {
+          "claim_id": "C_GEN5_ENOCH",
+          "source_layer": "Genesis 5:24",
+          "statement": "Enoch walked with God; he was not, for God took him."
+        },
+        {
+          "claim_id": "C_2ENOCH",
+          "source_layer": "2 Enoch",
+          "statement": "Enoch traverses ten heavens and is shown cosmic structures."
+        },
+        {
+          "claim_id": "C_3ENOCH_METATRON",
+          "source_layer": "3 Enoch",
+          "statement": "Enoch is transformed into Metatron, Prince of the Presence."
+        }
+      ]
+    },
+    {
+      "node_class": "event",
+      "cls": "event",
+      "id": "EVENT_KINGSHIP_REFOUND",
+      "method": "Same-event slot; sources layered; observer discerns",
+      "conf": "preferred_view=null; observer discerns",
+      "corroboration": {
+        "source_count": 3,
+        "independent_traditions": 3,
+        "agreeing_on_event": 3,
+        "disagreeing_on_details": 0,
+        "weight": 0.65,
+        "map_emphasis": "high"
+      },
+      "source_count": 3,
+      "star": "**",
+      "refs": {
+        "star": [
+          {
+            "title": "Genesis 10 Table of Nations (KJV)",
+            "url": "https://www.biblegateway.com/passage/?search=Genesis+10&version=KJV"
+          }
+        ],
+        "dstar": [
+          {
+            "title": "Sumerian King List",
+            "url": "https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.2.1.1"
+          },
+          {
+            "title": "Berossus / Oannes tradition",
+            "url": "https://www.sacred-texts.com/ane/index.htm"
+          }
+        ]
+      },
+      "node_id": "EVENT_KINGSHIP_REFOUND",
+      "title": "Kingship descends again / Apkallu",
+      "aliases": "Eridu Genesis · Berossus Oannes · post-flood sages",
+      "lat": 30.82,
+      "lon": 45.93,
+      "place": "Eridu / Sumer",
+      "stratum": "III — Re-Set",
+      "src": "Eridu Genesis; Berossus Babyloniaca (Oannes/Apkallu); Sumerian King List",
+      "body": "Post-flood refounding slot: kingship descends from heaven again; amphibious sages (Apkallu/Oannes) teach crafts. Kept as ** Mesopotamian layer beside the biblical Table of Nations, not as a replacement.",
+      "starNote": "** Sumerian/Babylonian post-flood kingship and sage traditions. Biblical post-flood nations are Genesis 10 — observer discerns relation."
     }
   ],
   "nli_results": [
@@ -1221,7 +1526,8 @@
       "label": "II  Descent",
       "ids": [
         "EVENT_WATCHERS",
-        "CONFLICT_DESCENT_IDENTITY"
+        "CONFLICT_DESCENT_IDENTITY",
+        "EVENT_ENOCH_ASCENT"
       ]
     },
     {
@@ -1230,7 +1536,8 @@
       "ids": [
         "EVENT_DELUGE",
         "CONFLICT_FLOOD_DURATION",
-        "EVENT_BABEL"
+        "EVENT_BABEL",
+        "EVENT_KINGSHIP_REFOUND"
       ]
     },
     {
@@ -1261,8 +1568,21 @@
     }
   ],
   "last_search_apply": {
-    "at": "2026-08-22T20:39:40.640502+00:00",
-    "applied": 0,
-    "skipped": 5
+    "at": "2026-08-22T21:29:30.258094+00:00",
+    "applied": [
+      "C_SATAPATHA_MANU",
+      "C_HOPI_FLOOD",
+      "C_LIVIUS_ATRAHASIS",
+      "C_ENOCH6_OATH",
+      "C_JUBILEES_WATCHERS",
+      "C_HIRANYAGARBHA",
+      "C_EMERALD_TABLET",
+      "C_LONE_MAN",
+      "C_ENMERKAR",
+      "C_DANIEL_COURT",
+      "NODE:EVENT_ENOCH_ASCENT",
+      "NODE:EVENT_KINGSHIP_REFOUND"
+    ],
+    "pass": 2
   }
 }
